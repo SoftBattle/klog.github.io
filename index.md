@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+# KLog Docs
 
-You can use the [editor on GitHub](https://github.com/SoftBattle/klog.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+KLog 大软设计课程项目
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 项目简介
+KLog是一个博客平台。
 
-### Markdown
+## 成员及分工
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* 组长：陈弘扬
 
-```markdown
-Syntax highlighted code block
+* 后台开发：孙鹏、颜塨洵、陈弘扬、郭佳昊
 
-# Header 1
-## Header 2
-### Header 3
+* 前端开发：冉康安
 
-- Bulleted
-- List
+## 文档
 
-1. Numbered
-2. List
+1. [需求文档](prd/需求文档.md)
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SoftBattle/klog.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+2. [api文档](api/api.md)
