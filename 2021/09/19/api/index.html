@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>  API及类型文档 |    KLog.</title>
+  <title>  Api及类型文档 |    KLog.</title>
   <meta name="description" content="KLog&#39;s docs are here.">
   <!-- 标签页图标 -->
   
@@ -102,8 +102,8 @@
 <article class="post-inner">
   <div class="post-content-outer">
     <div class="post-intro">
-      <div class="post-title animate__animated  animate__fadeInUp">API及类型文档</div>
-      <div class="meta-intro animate__animated  animate__fadeInUp">Sep 18 2021</div>
+      <div class="post-title animate__animated  animate__fadeInUp">api及类型文档</div>
+      <div class="meta-intro animate__animated  animate__fadeInUp">Sep 19 2021</div>
       
     </div>
     <div class="post-content-inner">
@@ -310,6 +310,8 @@
 
 <h3 id="2-6-获取用户关注"><a href="#2-6-获取用户关注" class="headerlink" title="2.6 获取用户关注"></a>2.6 获取用户关注</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post /api/user/follows</span><br></pre></td></tr></table></figure>
 
+
+
 <h4 id="请求参数：-7"><a href="#请求参数：-7" class="headerlink" title="请求参数："></a>请求参数：</h4><table>
 <thead>
 <tr>
@@ -428,14 +430,14 @@
 
 <p>说明：依据uid搜索，对所有用户通用（搜索自己时，也需要带上自己的uid）</p>
 <h4 id="返回数据-9"><a href="#返回数据-9" class="headerlink" title="返回数据"></a>返回数据</h4><p>示例1：</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	stat: &#x27;ok&#x27;,</span><br><span class="line">	data: &#123;</span><br><span class="line">		items: [</span><br><span class="line">			&#123;</span><br><span class="line">                aid: &#x27;jiwjisw&#x27;,</span><br><span class="line">                title: &#x27;readme&#x27;,</span><br><span class="line">                authour: &#x27;cmkk&#x27;,</span><br><span class="line">                subTitle: &#x27;说明&#x27;,</span><br><span class="line">                banners: [&#x27;msms.png&#x27;, &#x27;dhwyudhw.png&#x27;],</span><br><span class="line">                tags: [&#x27;js&#x27;],</span><br><span class="line">                view: <span class="number">100</span>,</span><br><span class="line">                ctime: <span class="number">114218327832</span>,</span><br><span class="line">                mtime: <span class="number">114356676767</span>,</span><br><span class="line">                </span><br><span class="line">            &#125;</span><br><span class="line">		],</span><br><span class="line">		total: <span class="number">1</span> <span class="comment">// 搜索结果总数</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	stat: &#x27;ok&#x27;,</span><br><span class="line">	data: &#123;</span><br><span class="line">		items: [</span><br><span class="line">			&#123;</span><br><span class="line">                pid: &#x27;jiwjisw&#x27;,</span><br><span class="line">                title: &#x27;readme&#x27;,</span><br><span class="line">                authour: &#x27;cmkk&#x27;,</span><br><span class="line">                subTitle: &#x27;说明&#x27;,</span><br><span class="line">                banners: [&#x27;msms.png&#x27;, &#x27;dhwyudhw.png&#x27;],</span><br><span class="line">                tags: [&#x27;js&#x27;],</span><br><span class="line">                view: <span class="number">100</span>,</span><br><span class="line">                ctime: <span class="number">114218327832</span>,</span><br><span class="line">                mtime: <span class="number">114356676767</span>,</span><br><span class="line">                </span><br><span class="line">            &#125;</span><br><span class="line">		],</span><br><span class="line">		total: <span class="number">1</span> <span class="comment">// 搜索结果总数</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>示例2：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	stat: &#x27;Internal_Server_Error&#x27;,</span><br><span class="line">	msg: &#x27;内部错误&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
-<h3 id="2-8-获取用户文章"><a href="#2-8-获取用户文章" class="headerlink" title="2.8 获取用户文章"></a>2.8 获取用户文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post /api/user/articles</span><br></pre></td></tr></table></figure>
+<h3 id="2-8-获取用户文章"><a href="#2-8-获取用户文章" class="headerlink" title="2.8 获取用户文章"></a>2.8 获取用户文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post /api/user/posts</span><br></pre></td></tr></table></figure>
 
 <h4 id="请求参数：-10"><a href="#请求参数：-10" class="headerlink" title="请求参数："></a>请求参数：</h4><table>
 <thead>
@@ -471,7 +473,7 @@
 
 <p>说明：依据uid搜索，对所有用户通用（搜索自己时，也需要带上自己的uid）</p>
 <h4 id="返回数据-10"><a href="#返回数据-10" class="headerlink" title="返回数据"></a>返回数据</h4><p>示例1：</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	stat: &#x27;ok&#x27;,</span><br><span class="line">	data: &#123;</span><br><span class="line">		items: [</span><br><span class="line">			&#123;</span><br><span class="line">                aid: &#x27;jiwjisw&#x27;,</span><br><span class="line">                authour: &#x27;cmkk&#x27;,</span><br><span class="line">                title: &#x27;readme&#x27;,</span><br><span class="line">                subTitle: &#x27;说明&#x27;,</span><br><span class="line">                banners: [&#x27;msms.png&#x27;, &#x27;dhwyudhw.png&#x27;],</span><br><span class="line">                tags: [&#x27;js&#x27;],</span><br><span class="line">                view: <span class="number">100</span>,</span><br><span class="line">                ctime: <span class="number">114218327832</span></span><br><span class="line">                mtime: <span class="number">114356676767</span></span><br><span class="line">            &#125;</span><br><span class="line">		],</span><br><span class="line">		total: <span class="number">1</span> <span class="comment">// 搜索结果总数</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	stat: &#x27;ok&#x27;,</span><br><span class="line">	data: &#123;</span><br><span class="line">		items: [</span><br><span class="line">			&#123;</span><br><span class="line">                pid: &#x27;jiwjisw&#x27;,</span><br><span class="line">                authour: &#x27;cmkk&#x27;,</span><br><span class="line">                title: &#x27;readme&#x27;,</span><br><span class="line">                subTitle: &#x27;说明&#x27;,</span><br><span class="line">                banners: [&#x27;msms.png&#x27;, &#x27;dhwyudhw.png&#x27;],</span><br><span class="line">                tags: [&#x27;js&#x27;],</span><br><span class="line">                view: <span class="number">100</span>,</span><br><span class="line">                ctime: <span class="number">114218327832</span></span><br><span class="line">                mtime: <span class="number">114356676767</span></span><br><span class="line">            &#125;</span><br><span class="line">		],</span><br><span class="line">		total: <span class="number">1</span> <span class="comment">// 搜索结果总数</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>示例2：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	stat: &#x27;Internal_Server_Error&#x27;,</span><br><span class="line">	msg: &#x27;内部错误&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -535,20 +537,20 @@
 
 
 <hr>
-<h2 id="3-文章"><a href="#3-文章" class="headerlink" title="3 文章"></a>3 文章</h2><h3 id="3-1-预览-浏览文章"><a href="#3-1-预览-浏览文章" class="headerlink" title="3.1 预览/浏览文章"></a>3.1 预览/浏览文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">get /api/article/:aid</span><br></pre></td></tr></table></figure>
+<h2 id="3-文章"><a href="#3-文章" class="headerlink" title="3 文章"></a>3 文章</h2><h3 id="3-1-预览-浏览文章"><a href="#3-1-预览-浏览文章" class="headerlink" title="3.1 预览/浏览文章"></a>3.1 预览/浏览文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">get /api/post/:pid</span><br></pre></td></tr></table></figure>
 
 <h4 id="请求参数：-13"><a href="#请求参数：-13" class="headerlink" title="请求参数："></a>请求参数：</h4><p>无</p>
 <p>示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">get /api/article/hsdwuhdwu</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">get /api/post/hsdwuhdwu</span><br></pre></td></tr></table></figure>
 
-<p>说明：后台需要在在url中取得参数aid，以此返回对应的文章</p>
+<p>说明：后台需要在在url中取得参数pid，以此返回对应的文章</p>
 <h4 id="返回数据-13"><a href="#返回数据-13" class="headerlink" title="返回数据"></a>返回数据</h4><p>示例1：</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	stat: &#x27;ok&#x27;,</span><br><span class="line">	data: &#123;</span><br><span class="line">		aid: &#x27;jiwjisw&#x27;,</span><br><span class="line">        authour: &#x27;cmkk&#x27;,</span><br><span class="line">        title: &#x27;readme&#x27;,</span><br><span class="line">        subTitle: &#x27;说明&#x27;,</span><br><span class="line">        content: &#x27;# readme dede&#x27;</span><br><span class="line">        banners: [&#x27;msms.png&#x27;, &#x27;dhwyudhw.png&#x27;],</span><br><span class="line">        tags: [&#x27;js&#x27;],</span><br><span class="line">        view: <span class="number">100</span>,</span><br><span class="line">        ctime: <span class="number">114218327832</span>,</span><br><span class="line">        mtime: <span class="number">114356676767</span>,</span><br><span class="line">		star: <span class="literal">true</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	stat: &#x27;ok&#x27;,</span><br><span class="line">	data: &#123;</span><br><span class="line">		pid: &#x27;jiwjisw&#x27;,</span><br><span class="line">        authour: &#x27;cmkk&#x27;,</span><br><span class="line">        title: &#x27;readme&#x27;,</span><br><span class="line">        subTitle: &#x27;说明&#x27;,</span><br><span class="line">        content: &#x27;# readme dede&#x27;</span><br><span class="line">        banners: [&#x27;msms.png&#x27;, &#x27;dhwyudhw.png&#x27;],</span><br><span class="line">        tags: [&#x27;js&#x27;],</span><br><span class="line">        view: <span class="number">100</span>,</span><br><span class="line">        ctime: <span class="number">114218327832</span>,</span><br><span class="line">        mtime: <span class="number">114356676767</span>,</span><br><span class="line">		star: <span class="literal">true</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>示例2：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	stat: &#x27;Internal_Server_Error&#x27;,</span><br><span class="line">	msg: &#x27;内部错误&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="3-2-新建文章"><a href="#3-2-新建文章" class="headerlink" title="3.2  新建文章"></a>3.2  新建文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post /api/article/new</span><br></pre></td></tr></table></figure>
+<h3 id="3-2-新建文章"><a href="#3-2-新建文章" class="headerlink" title="3.2  新建文章"></a>3.2  新建文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post /api/post/new</span><br></pre></td></tr></table></figure>
 
 <h4 id="请求参数：-14"><a href="#请求参数：-14" class="headerlink" title="请求参数："></a>请求参数：</h4><table>
 <thead>
@@ -594,7 +596,7 @@
 <p>示例2：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	stat: &#x27;Internal_Server_Error&#x27;,</span><br><span class="line">	msg: &#x27;内部错误&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="3-3-编辑文章"><a href="#3-3-编辑文章" class="headerlink" title="3.3  编辑文章"></a>3.3  编辑文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">put /api/article/:aid</span><br></pre></td></tr></table></figure>
+<h3 id="3-3-编辑文章"><a href="#3-3-编辑文章" class="headerlink" title="3.3  编辑文章"></a>3.3  编辑文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">put /api/post/:pid</span><br></pre></td></tr></table></figure>
 
 <h4 id="请求参数：-15"><a href="#请求参数：-15" class="headerlink" title="请求参数："></a>请求参数：</h4><table>
 <thead>
@@ -633,20 +635,20 @@
 <p>示例：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	title: &#x27;readme&#x27;,</span><br><span class="line">    subTitle: &#x27;readme dedefe&#x27;,</span><br><span class="line">    content: &#x27;# readme&#x27;,</span><br><span class="line">    banners: [&#x27;123.png&#x27;],</span><br><span class="line">    tags: [&#x27;js&#x27;, &#x27;react&#x27;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>说明：解析token得到作者，判断是否有权限；在url中获取aid，找到需要更新的的文章。</p>
+<p>说明：解析token得到作者，判断是否有权限；在url中获取pid，找到需要更新的的文章。</p>
 <h4 id="返回数据-15"><a href="#返回数据-15" class="headerlink" title="返回数据"></a>返回数据</h4><p>示例1：</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	stat: &#x27;ok&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>示例2：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	stat: &#x27;Internal_Server_Error&#x27;,</span><br><span class="line">	msg: &#x27;内部错误&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="3-4-删除文章"><a href="#3-4-删除文章" class="headerlink" title="3.4  删除文章"></a>3.4  删除文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete /api/article/:aid</span><br></pre></td></tr></table></figure>
+<h3 id="3-4-删除文章"><a href="#3-4-删除文章" class="headerlink" title="3.4  删除文章"></a>3.4  删除文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete /api/post/:pid</span><br></pre></td></tr></table></figure>
 
 <h4 id="请求参数：-16"><a href="#请求参数：-16" class="headerlink" title="请求参数："></a>请求参数：</h4><p>无</p>
 <p>示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete /api/article/djuedeuef</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete /api/post/djuedeuef</span><br></pre></td></tr></table></figure>
 
-<p>说明：解析token得到作者，在url中获取aid，判断是否具有权限删除，能则删除。</p>
+<p>说明：解析token得到作者，在url中获取pid，判断是否具有权限删除，能则删除。</p>
 <h4 id="返回数据-16"><a href="#返回数据-16" class="headerlink" title="返回数据"></a>返回数据</h4><p>示例1：</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	stat: &#x27;ok&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -656,7 +658,7 @@
 <p>示例3：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	stat: &#x27;&#x27;,</span><br><span class="line">	msg: &#x27;权限不足&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="3-5-收藏文章"><a href="#3-5-收藏文章" class="headerlink" title="3.5  收藏文章"></a>3.5  收藏文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post /api/article/unstar</span><br></pre></td></tr></table></figure>
+<h3 id="3-5-收藏文章"><a href="#3-5-收藏文章" class="headerlink" title="3.5  收藏文章"></a>3.5  收藏文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post /api/post/unstar</span><br></pre></td></tr></table></figure>
 
 <h4 id="请求参数：-17"><a href="#请求参数：-17" class="headerlink" title="请求参数："></a>请求参数：</h4><table>
 <thead>
@@ -667,7 +669,7 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>aid</td>
+<td>pid</td>
 <td>string</td>
 <td>收藏的文章id</td>
 </tr>
@@ -678,7 +680,7 @@
 </tr>
 </tbody></table>
 <p>示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	aid: &#x27;wdwdwswsdw&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	pid: &#x27;wdwdwswsdw&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>说明：解析token得到作者，将。</p>
 <h4 id="返回数据-17"><a href="#返回数据-17" class="headerlink" title="返回数据"></a>返回数据</h4><p>示例1：</p>
@@ -687,7 +689,7 @@
 <p>示例2：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	stat: &#x27;Internal_Server_Error&#x27;,</span><br><span class="line">	msg: &#x27;内部错误&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="3-6-取消收藏文章"><a href="#3-6-取消收藏文章" class="headerlink" title="3.6  取消收藏文章"></a>3.6  取消收藏文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post /api/article/star</span><br></pre></td></tr></table></figure>
+<h3 id="3-6-取消收藏文章"><a href="#3-6-取消收藏文章" class="headerlink" title="3.6  取消收藏文章"></a>3.6  取消收藏文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post /api/post/star</span><br></pre></td></tr></table></figure>
 
 <h4 id="请求参数：-18"><a href="#请求参数：-18" class="headerlink" title="请求参数："></a>请求参数：</h4><table>
 <thead>
@@ -698,7 +700,7 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>aid</td>
+<td>pid</td>
 <td>string</td>
 <td>收藏的文章id</td>
 </tr>
@@ -709,7 +711,7 @@
 </tr>
 </tbody></table>
 <p>示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	aid: &#x27;wdwdwswsdw&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	pid: &#x27;wdwdwswsdw&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>说明：解析token得到作者，若该文章已经收藏，则取消收藏，否则收藏。</p>
 <h4 id="返回数据-18"><a href="#返回数据-18" class="headerlink" title="返回数据"></a>返回数据</h4><p>示例1：</p>
@@ -749,23 +751,30 @@
 <p>示例2：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	stat: &#x27;Internal_Server_Error&#x27;,</span><br><span class="line">	msg: &#x27;内部错误&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h1><p>用户相关的键：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">uid: &#x27;用户id&#x27;,</span><br><span class="line">nickname: &#x27;&#x27;,</span><br><span class="line">avatar: &#x27;&#x27;,</span><br><span class="line">   followers: &#x27;关注我的人&#x27;,</span><br><span class="line">   follows: &#x27;我关注的&#x27;,</span><br><span class="line">   stars: &#x27;文章收藏&#x27;,</span><br><span class="line">   articles: &#x27;我的文章&#x27;,</span><br></pre></td></tr></table></figure>
-
-<p>文章相关的键：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">aid: 文章id</span><br><span class="line">author: 作者</span><br><span class="line">title: 文章标题</span><br><span class="line">subTitle: 副标题</span><br><span class="line">tags: 标签，数组</span><br><span class="line">banners: banner图，数组</span><br><span class="line">view: 浏览数，数字</span><br><span class="line">ctime: 创建时间，date</span><br><span class="line">mtime: 最近编辑时间，date</span><br></pre></td></tr></table></figure>
 
 
 
+
+
+
+
+
+<h1 id="类型与键"><a href="#类型与键" class="headerlink" title="类型与键"></a>类型与键</h1><p>用户相关的键：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">uid: &#x27;用户id&#x27;,</span><br><span class="line">nickname: &#x27;&#x27;,</span><br><span class="line">avatar: &#x27;&#x27;,</span><br><span class="line">   followers: &#x27;关注我的人&#x27;,</span><br><span class="line">   follows: &#x27;我关注的&#x27;,</span><br><span class="line">   stars: &#x27;文章收藏&#x27;,</span><br><span class="line">   posts: &#x27;我的文章&#x27;,</span><br></pre></td></tr></table></figure>
+
+<p>文章(post)相关的键：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">pid: 文章id</span><br><span class="line">author: 作者</span><br><span class="line">title: 文章标题</span><br><span class="line">subTitle: 副标题</span><br><span class="line">tags: 标签，数组</span><br><span class="line">banners: banner图，数组</span><br><span class="line">view: 浏览数，数字</span><br><span class="line">ctime: 创建时间，date</span><br><span class="line">mtime: 最近编辑时间，date</span><br></pre></td></tr></table></figure>
+
+<p>类型：</p>
 <ol>
 <li><p>用户主页左边tab</p>
 <figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> UserBasicInfo &#123;</span><br><span class="line">    <span class="attr">uid</span>: <span class="built_in">string</span>,</span><br><span class="line">    <span class="attr">nickname</span>: <span class="built_in">string</span>,</span><br><span class="line">    <span class="attr">avatar</span>: <span class="built_in">string</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li><p>文章基础信息，不包含content</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> ArticleBasicInfo &#123;</span><br><span class="line">    <span class="attr">aid</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">title</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">subTitle</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">banners</span>: <span class="built_in">string</span>[]</span><br><span class="line">    <span class="attr">view</span>: <span class="built_in">number</span></span><br><span class="line">    <span class="attr">ctime</span>: <span class="built_in">Date</span></span><br><span class="line">    <span class="attr">mtime</span>: <span class="built_in">Date</span></span><br><span class="line">    <span class="attr">tags</span>: <span class="built_in">string</span>[]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> PostBasicInfo &#123;</span><br><span class="line">    <span class="attr">pid</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">title</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">subTitle</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">banners</span>: <span class="built_in">string</span>[]</span><br><span class="line">    <span class="attr">view</span>: <span class="built_in">number</span></span><br><span class="line">    <span class="attr">ctime</span>: <span class="built_in">Date</span></span><br><span class="line">    <span class="attr">mtime</span>: <span class="built_in">Date</span></span><br><span class="line">    <span class="attr">tags</span>: <span class="built_in">string</span>[]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li><p>文章详细信息，包含content与收藏信息</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> Article &#123;</span><br><span class="line">    <span class="attr">aid</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">authour</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">title</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">subTitle</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">content</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">banners</span>: <span class="built_in">string</span>[]</span><br><span class="line">    <span class="attr">tags</span>: <span class="built_in">string</span>[]</span><br><span class="line">    <span class="attr">view</span>: <span class="built_in">number</span></span><br><span class="line">    <span class="attr">ctime</span>: <span class="built_in">Date</span></span><br><span class="line">    <span class="attr">mtime</span>: <span class="built_in">Date</span></span><br><span class="line"> <span class="attr">star</span>: <span class="built_in">boolean</span> <span class="comment">// 收藏与否</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> Post &#123;</span><br><span class="line">    <span class="attr">pid</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">authour</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">title</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">subTitle</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">content</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">banners</span>: <span class="built_in">string</span>[]</span><br><span class="line">    <span class="attr">tags</span>: <span class="built_in">string</span>[]</span><br><span class="line">    <span class="attr">view</span>: <span class="built_in">number</span></span><br><span class="line">    <span class="attr">ctime</span>: <span class="built_in">Date</span></span><br><span class="line">    <span class="attr">mtime</span>: <span class="built_in">Date</span></span><br><span class="line"> <span class="attr">star</span>: <span class="built_in">boolean</span> <span class="comment">// 收藏与否</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li><p>新建文章</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> NewArticle &#123;</span><br><span class="line">	<span class="attr">title</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">subTitle</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">content</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">banners</span>: <span class="built_in">string</span>[]</span><br><span class="line">    <span class="attr">tags</span>: <span class="built_in">string</span>[]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> NewPost &#123;</span><br><span class="line">	<span class="attr">title</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">subTitle</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">content</span>: <span class="built_in">string</span></span><br><span class="line">    <span class="attr">banners</span>: <span class="built_in">string</span>[]</span><br><span class="line">    <span class="attr">tags</span>: <span class="built_in">string</span>[]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
 
         <!-- 分类文章 -->
