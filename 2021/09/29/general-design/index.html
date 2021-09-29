@@ -1,0 +1,504 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>  Api及类型文档 |    KLog.</title>
+  <meta name="description" content="KLog&#39;s docs are here.">
+  <!-- 标签页图标 -->
+  
+
+  <!-- 图标库 -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- 动画库 -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/css/animate.css"/>
+  
+  <!-- css文件 -->
+  
+<link rel="stylesheet" href="/css/white.css">
+
+  <!-- 代码高亮 -->
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+
+<div class="menu-outer">
+    <div class="menu-inner">
+      <div class="menu-site-name  animate__animated  animate__fadeInUp">
+        <a href="/">
+          KLog.
+        </a>
+        
+      </div>
+      <div class="menu-group">
+        <ul class="menu-ul">
+        
+          <a href="/" class="nav-link">
+            <li class="menu-li  animate__animated  animate__fadeInUp">
+              HOME
+            </li>
+          </a>
+        
+          <a href="/archives" class="nav-link">
+            <li class="menu-li  animate__animated  animate__fadeInUp">
+              DOCS
+            </li>
+          </a>
+        
+        
+        
+          <li class="menu-li animate__animated  animate__fadeInUp" id="mobile-menu">
+            <i class="ri-menu-line"></i>
+          </li>
+        
+        </ul>
+
+      </div>
+
+    </div>
+</div>
+<div id="mobile-main" class="animate__animated  animate__fadeIn">
+  <div class="mobile-menu-inner">
+    <div class="mobile-menu-site-name animate__animated  animate__fadeInUp">
+      <a href="/">
+        KLog.
+      </a>
+    </div>
+    <div class="mobile-menu-group" id="mobile-close">
+      <i class="ri-close-line"></i>
+    </div>
+
+  </div>
+
+  <div class="mobile-menu-div">
+  
+    <a href="/" class="mobile-nav-link">
+      <div class="mobile-menu-child animate__animated  animate__fadeInUp">
+        <span>HOME</span>
+      </div>
+    </a>
+  
+    <a href="/archives" class="mobile-nav-link">
+      <div class="mobile-menu-child animate__animated  animate__fadeInUp">
+        <span>DOCS</span>
+      </div>
+    </a>
+  
+  
+  </div>
+
+
+</div>
+
+<div class="body-outer">
+  <div class="body-inner">
+    
+<article class="post-inner">
+  <div class="post-content-outer">
+    <div class="post-intro">
+      <div class="post-title animate__animated  animate__fadeInUp">api及类型文档</div>
+      <div class="meta-intro animate__animated  animate__fadeInUp">Sep 29 2021</div>
+      
+    </div>
+    <div class="post-content-inner">
+      <div class="post-content-inner-space">
+
+      </div>
+      <div class="post-content-main animate__animated  animate__fadeInUp">
+        <!-- top型目录 -->
+        
+        <h1 id="概要设计"><a href="#概要设计" class="headerlink" title="概要设计"></a>概要设计</h1><h2 id="1-功能设计"><a href="#1-功能设计" class="headerlink" title="1 功能设计"></a>1 功能设计</h2><p>博客系统主要有登录注册、编辑个人信息、浏览博客，编辑文章、博客社交五个功能</p>
+<p>
+        <span class="lazyload-img-span">
+        <img   
+           data-src="..%5Cassets%5Cimg%5C%E6%80%BB%E4%BD%93%E7%BB%93%E6%9E%84.png" >
+        </sapn>
+      </p>
+<h3 id="1-1-登录注册功能"><a href="#1-1-登录注册功能" class="headerlink" title="1.1 登录注册功能"></a>1.1 登录注册功能</h3><p>用户在网站首页登录或注册账号能对博客进行更多操作</p>
+<p>1.无账号用户：在登录页面点击Sign up链接进入注册页面→新建账号和密码并确认密码→点击Sign up进行注册→成功之后跳转人博客空间</p>
+<p>接口：</p>
+<p>输入：用户点击注册链接跳转后输入账号密码点击注册按钮</p>
+<p>输出：博客空间</p>
+<p>2.有账号用户：在登录页面输入账号和密码→点击Sign in按钮→成功之后跳转人博客空间</p>
+<p>接口：</p>
+<p>输入：用户输入账号密码点击登录按钮</p>
+<p>输出：博客空间</p>
+<p>流程图：</p>
+<p>
+        <span class="lazyload-img-span">
+        <img   
+           data-src="..%5Cassets%5Cimg%5C%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C.png" >
+        </sapn>
+      </p>
+<h3 id="1-2-编辑个人信息功能"><a href="#1-2-编辑个人信息功能" class="headerlink" title="1.2 编辑个人信息功能"></a>1.2 编辑个人信息功能</h3><p>登录用户可以在首页点击个人空间进入个人博客空间，在个人博客空间中浏览自己发布的博客或者修改个人信息，可以修改昵称、密码和密码。未登录用户进入登录注册页面</p>
+<p>接口：</p>
+<p>输入：个人信息</p>
+<p>输出：个人博客空间</p>
+<p>流程图：</p>
+<p>
+        <span class="lazyload-img-span">
+        <img   
+           data-src="..%5Cassets%5Cimg%5C%E7%BC%96%E8%BE%91%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF.png" >
+        </sapn>
+      </p>
+<h3 id="1-3-浏览博客"><a href="#1-3-浏览博客" class="headerlink" title="1.3 浏览博客"></a>1.3 浏览博客</h3><p>用户可以在博客主页随机浏览博客或者对博客或作者进行搜索，还可以按时间顺序或热度顺序检索博客。</p>
+<p>接口：</p>
+<p>输入：点击博客；博客作者关键词和搜索按钮；顺序检索按钮</p>
+<p>输出：博客文章；被搜索到的博客及作者；调整后的博客主页</p>
+<p>流程图：</p>
+<p>
+        <span class="lazyload-img-span">
+        <img   
+           data-src="..%5Cassets%5Cimg%5C%E6%B5%8F%E8%A7%88%E5%8D%9A%E5%AE%A2.png" >
+        </sapn>
+      </p>
+<h3 id="1-4-编辑文章"><a href="#1-4-编辑文章" class="headerlink" title="1.4 编辑文章"></a>1.4 编辑文章</h3><p>用户可以在个人主页中点击文章编辑器来新建、修改、删除文章。</p>
+<p>接口：</p>
+<p>输入：新建、删除按钮；修改按钮</p>
+<p>输出：编辑后的个人主页；文章主页</p>
+<p>流程图：</p>
+<p>
+        <span class="lazyload-img-span">
+        <img   
+           data-src="..%5Cassets%5Cimg%5C%E7%BC%96%E8%BE%91%E6%96%87%E7%AB%A0.png" >
+        </sapn>
+      </p>
+<h3 id="1-5-博客社交"><a href="#1-5-博客社交" class="headerlink" title="1.5 博客社交"></a>1.5 博客社交</h3><p>用户可以在浏览其他博客时对博客收藏关注点赞和评论。</p>
+<p>接口：</p>
+<p>输入：收藏、点赞、关注按钮；评论内容</p>
+<p>输出：更改信息后的博客页面</p>
+<p>流程图：
+        <span class="lazyload-img-span">
+        <img   
+           data-src="..%5Cassets%5Cimg%5C%E5%8D%9A%E5%AE%A2%E7%A4%BE%E4%BA%A4.png" >
+        </sapn>
+      </p>
+<h2 id="2-项目进度安排及人员分工"><a href="#2-项目进度安排及人员分工" class="headerlink" title="2.项目进度安排及人员分工"></a>2.项目进度安排及人员分工</h2><table>
+<thead>
+<tr>
+<th>登录账号</th>
+<th>2021/9/17</th>
+<th>9</th>
+<th>2021/9/26</th>
+<th>颜塨洵</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>注册账号</td>
+<td>2021/9/17</td>
+<td>9</td>
+<td>2021/9/26</td>
+<td>颜塨洵</td>
+</tr>
+<tr>
+<td>选择登录注册</td>
+<td>2021/9/17</td>
+<td>9</td>
+<td>2021/9/26</td>
+<td>颜塨洵</td>
+</tr>
+<tr>
+<td>个人主页</td>
+<td>2021/9/26</td>
+<td>31</td>
+<td>2021/10/27</td>
+<td>颜塨洵</td>
+</tr>
+<tr>
+<td>编辑信息</td>
+<td>2021/9/26</td>
+<td>31</td>
+<td>2021/10/27</td>
+<td>颜塨洵</td>
+</tr>
+<tr>
+<td>修改头像</td>
+<td>2021/9/26</td>
+<td>31</td>
+<td>2021/10/27</td>
+<td>颜塨洵</td>
+</tr>
+<tr>
+<td>修改昵称</td>
+<td>2021/9/26</td>
+<td>31</td>
+<td>2021/10/27</td>
+<td>颜塨洵</td>
+</tr>
+<tr>
+<td>修改密码</td>
+<td>2021/9/26</td>
+<td>31</td>
+<td>2021/10/27</td>
+<td>颜塨洵</td>
+</tr>
+<tr>
+<td>个人博客</td>
+<td>2021/9/17</td>
+<td>40</td>
+<td>2021/10/27</td>
+<td>孙鹏</td>
+</tr>
+<tr>
+<td>进入编辑文章界面</td>
+<td>2021/9/17</td>
+<td>40</td>
+<td>2021/10/27</td>
+<td>孙鹏</td>
+</tr>
+<tr>
+<td>编辑文章</td>
+<td>2021/9/17</td>
+<td>40</td>
+<td>2021/10/27</td>
+<td>孙鹏</td>
+</tr>
+<tr>
+<td>搜索博客</td>
+<td>2021/9/17</td>
+<td>40</td>
+<td>2021/10/27</td>
+<td>孙鹏</td>
+</tr>
+<tr>
+<td>搜索功能</td>
+<td>2021/9/17</td>
+<td>40</td>
+<td>2021/10/27</td>
+<td>孙鹏</td>
+</tr>
+<tr>
+<td>博客主页</td>
+<td>2021/9/17</td>
+<td>40</td>
+<td>2021/10/27</td>
+<td>孙鹏</td>
+</tr>
+<tr>
+<td>浏览博客</td>
+<td>2021/9/17</td>
+<td>40</td>
+<td>2021/10/27</td>
+<td>孙鹏</td>
+</tr>
+<tr>
+<td>社交功能</td>
+<td>2021/9/17</td>
+<td>40</td>
+<td>2021/10/27</td>
+<td>孙鹏</td>
+</tr>
+<tr>
+<td>排序功能</td>
+<td>2021/9/17</td>
+<td>40</td>
+<td>2021/10/27</td>
+<td>孙鹏</td>
+</tr>
+<tr>
+<td>登录界面</td>
+<td>2021/9/17</td>
+<td>9</td>
+<td>2021/9/26</td>
+<td>冉康安</td>
+</tr>
+<tr>
+<td>注册界面</td>
+<td>2021/9/17</td>
+<td>9</td>
+<td>2021/9/26</td>
+<td>冉康安</td>
+</tr>
+<tr>
+<td>用户信息界面</td>
+<td>2021/9/26</td>
+<td>31</td>
+<td>2021/10/27</td>
+<td>冉康安</td>
+</tr>
+<tr>
+<td>用户信息编辑界面</td>
+<td>2021/9/26</td>
+<td>31</td>
+<td>2021/10/27</td>
+<td>冉康安</td>
+</tr>
+<tr>
+<td>搜索界面</td>
+<td>2021/9/26</td>
+<td>31</td>
+<td>2021/10/27</td>
+<td>冉康安</td>
+</tr>
+<tr>
+<td>博客页面主页面</td>
+<td>2021/9/26</td>
+<td>31</td>
+<td>2021/10/27</td>
+<td>冉康安</td>
+</tr>
+<tr>
+<td>单个博客具体页面</td>
+<td>2021/9/26</td>
+<td>31</td>
+<td>2021/10/27</td>
+<td>冉康安</td>
+</tr>
+<tr>
+<td>文章编辑界面</td>
+<td>2021/9/26</td>
+<td>31</td>
+<td>2021/10/27</td>
+<td>冉康安</td>
+</tr>
+<tr>
+<td>修改密码界面</td>
+<td>2021/9/26</td>
+<td>31</td>
+<td>2021/10/27</td>
+<td>冉康安</td>
+</tr>
+<tr>
+<td>前后端对接及系统测试</td>
+<td>2021/10/27</td>
+<td>7</td>
+<td>2021/11/3</td>
+<td></td>
+</tr>
+<tr>
+<td>实验报告</td>
+<td>2021/11/3</td>
+<td>6</td>
+<td>2021/11/9</td>
+<td>全组</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>人员分工</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>陈弘扬</td>
+<td>组长，项目经理、文档编写</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>颜塨洵</td>
+<td>后端用户模块开发</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>孙鹏</td>
+<td>后端文章模块开发</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>冉康安</td>
+<td>前端开发</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>郭佳昊</td>
+<td>文档编写排版</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>需求分析与原型设计全组参与</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>
+        <span class="lazyload-img-span">
+        <img   
+           data-src="..%5Cassets%5Cimg%5C%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%BA%A6%E5%AE%89%E6%8E%92.png" >
+        </sapn>
+      </p>
+
+        <!-- 分类文章 -->
+        
+      </div>
+      <div class="post-content-inner-space">
+        
+          <div class="space-toc-main animate__animated  animate__fadeInUp">
+            <ol class="space-toc"><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#1-%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1"><span class="space-toc-text">1 功能设计</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#2-%E9%A1%B9%E7%9B%AE%E8%BF%9B%E5%BA%A6%E5%AE%89%E6%8E%92%E5%8F%8A%E4%BA%BA%E5%91%98%E5%88%86%E5%B7%A5"><span class="space-toc-text">2.项目进度安排及人员分工</span></a></li></ol>
+           </div>
+        
+      </div>
+   </div>
+    <!-- 评论 -->
+    
+  </div>
+</article>
+  </div>
+</div>
+
+
+
+<!-- 如果是home模式的话，不在首页就显示footer，如果不是home模式的话 所有都显示footer -->
+
+  <div class="footer-outer animate__animated  animate__fadeInUp">
+    <div class="footer-inner">
+    <div class="footer-text">
+    <p>Power by <a target="_blank" rel="noopener" href="https://github.com/SoftBattle">SoftBattle</a></p>
+
+    </div>
+    <div class="footer-contact">
+    <ul class="footer-ul">
+        
+        <li class="footer-li">
+            <a href="https://github.com/SoftBattle" target="_blank">
+                <i class="ri-github-line"></i>
+            </a>
+        </li>
+        
+    </ul>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="/js/white.js"></script>
+
+
+
+</body>
+</html>
